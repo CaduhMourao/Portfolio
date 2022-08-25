@@ -90,8 +90,14 @@ export const LinkSocial = styled.div`
   display: flex;
   justify-content: end;
   gap: 10px;
+  transition: .5s ease-out;
   svg {
+    color: white;
     width: 25px;
     height: 25px;
+    opacity: 0.5;
+    :hover {
+      opacity: 1;
+    }
   }
 `;

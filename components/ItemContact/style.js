@@ -7,6 +7,11 @@ export const Item = styled.div`
   display: flex;
   align-items: center;
   word-break: break-word;
+  transition: 0.5s ease-out;
+  opacity: 0.5;
+  :hover {
+    opacity: 1;
+  }
   
   @media (max-width: 760px) {
    font-size: 12px;
@@ -19,6 +24,7 @@ export const Icon = styled.div`
   svg {
     width: 30px;
     height: 30px;
+    color: white;
   }
 `;
 

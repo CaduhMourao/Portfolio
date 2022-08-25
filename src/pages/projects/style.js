@@ -39,10 +39,15 @@ export const Li = styled.li`
   text-align: start;
   word-break: break-word;
   margin: 10px 10px 20px;
-  box-shadow: 1px 1px 1px 2px gray;
+  box-shadow: 1px 1px 1px 2px white;
   gap: 5px;
   border-radius: 10px;
   padding: 10px;
+  transition: 0.5s ease-out;
+  opacity: 0.5;
+  :hover {
+    opacity: 1;
+  }
   @media (max-width: 760px) {
    font-size: 13px;
   }

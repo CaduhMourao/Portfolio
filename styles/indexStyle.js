@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import 'animate.css';
 
 export const Container = styled.div`
   display: flex;
@@ -36,6 +37,8 @@ export const Infos = styled.div`
 export const Name = styled.span`
   font-size: 40px;
   font-weight: 500;
+  animation: zoomin;
+  animation-duration: 5s;
   @media (max-width: 760px) {
     font-size: 25px;
   }
@@ -47,7 +50,7 @@ export const Icon = styled.span`
   svg {
     width: 30px;
     height: 30px;
-    color: blue;
+    color: white;
   }
 `;
 
@@ -58,13 +61,15 @@ export const LinkProjects = styled.button`
   justify-content: space-around;
   margin-top: 20px;
   font-weight: bold;
-  transition: 1s ease-out;
+  transition: .5s ease-out;
+  opacity: 0.5;
   svg {
     font-size: 20px;
   }
 
   :hover {
-    background: blue;
+    background: white;
+    opacity: 1;
   }
 `;
 
