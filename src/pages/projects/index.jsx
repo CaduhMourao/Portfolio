@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Content, Ul, Li, TitleProject, Url, Created_at } from '../../../components/projects/style'
+import { Container, Content, Ul, Li, TitleProject, Url, Created_at } from '../../projects/style'
 
 export default function Projects() {
   const [itemsApi, setItemsApi] = useState([])

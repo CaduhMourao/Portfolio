@@ -23,6 +23,14 @@ export const Title = styled.div`
 export const NavLinks = styled.nav`
   display: flex;
   gap: 20px;
+  
+  transition: 0.5s ease-out;
+  a {
+    :hover {
+      color: black;
+      background: white;
+    }
+  }
   @media (max-width: 560px) {
     flex-direction: column;
     background-color: #161616;
@@ -33,7 +41,6 @@ export const NavLinks = styled.nav`
     right: 0px;
     width: 60%;
     right: ${props => props.sidebar ? '0' : '-100%'};
-    transition: 0.5s;
     a {
       margin-top: 100px;
       display: flex;
