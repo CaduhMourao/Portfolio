@@ -8,7 +8,7 @@ export default function Home() {
    <Container>
      <Content>
       <Infos>
-        <Name>FRONT-END DEVELOPER</Name>
+        <Name>FULL-STACK DEVELOPER</Name>
         <Icon>
           <FaHtml5 /> <FaCss3 /> <FaJs /> <FaReact />
         </Icon>        
