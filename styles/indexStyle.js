@@ -50,7 +50,6 @@ export const Icon = styled.span`
   svg {
     width: 30px;
     height: 30px;
-    color: white;
   }
 `;
 
