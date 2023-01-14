@@ -1,27 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 100px);
 `;
-
+  
 export const Content = styled.div`
-  width: 1120px;
-  height: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  @media (max-width: 600px) {
-    padding: 5px;
-  }
+padding: 20px;
+@media (max-width: 600px) {
+  padding: 5px;
+}
 `;
 
 export const Ul = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   overflow-x: auto;
   height: inherit;
+  justify-content: space-around;
+  padding: auto;
+  margin: auto;
   &::-webkit-scrollbar {
     width: 12px;
     border-radius: 10px;
@@ -36,17 +33,20 @@ export const Ul = styled.ul`
 export const Li = styled.li`
   display: flex;
   flex-direction: column;
-  text-align: start;
-  word-break: break-word;
-  margin: 10px 10px 20px;
-  box-shadow: 1px 1px 1px 2px white;
-  gap: 5px;
-  border-radius: 10px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
   padding: 10px;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
   transition: 0.5s ease-out;
-  opacity: 0.5;
   :hover {
-    opacity: 1;
+    background-color: white;
+    color: black;
   }
   @media (max-width: 760px) {
    font-size: 13px;

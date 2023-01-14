@@ -34,15 +34,15 @@ export const Infos = styled.div`
   }
 `;
 
-export const Name = styled.span`
-  font-size: 40px;
-  font-weight: 500;
-  animation: zoomin;
-  animation-duration: 5s;
-  @media (max-width: 760px) {
-    font-size: 25px;
-  }
+export const Profession = styled.span`
+  
 `;
+
+export const About = styled.span`
+  color: #d4c2fc;
+  margin-bottom: 20px;
+  text-align: justify;
+`
 
 export const Icon = styled.span`
   display: flex;
@@ -61,7 +61,7 @@ export const LinkProjects = styled.button`
   margin-top: 20px;
   font-weight: bold;
   transition: .5s ease-out;
-  opacity: 0.5;
+  opacity: 0.2;
   svg {
     font-size: 20px;
   }

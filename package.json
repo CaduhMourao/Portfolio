@@ -20,5 +20,17 @@
     "@netlify/plugin-nextjs": "^4.19.0",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5"
-  }
+  },
+  "description": "<h1>Portfólio </h1>",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaduhMourao/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaduhMourao/Portfolio/issues"
+  },
+  "homepage": "https://github.com/CaduhMourao/Portfolio#readme"
 }

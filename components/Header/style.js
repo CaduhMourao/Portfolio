@@ -18,6 +18,8 @@ export const Content = styled.div`
 
 export const Title = styled.div`
   font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 `;
 
 export const NavLinks = styled.nav`
@@ -33,7 +35,7 @@ export const NavLinks = styled.nav`
   }
   @media (max-width: 560px) {
     flex-direction: column;
-    background-color: #161616;
+    background-color: #415a77;
     position: fixed;
     height: 100%;
     gap: 0px;
