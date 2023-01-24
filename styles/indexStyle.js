@@ -72,17 +72,20 @@ export const LinkProjects = styled.button`
   }
 `;
 
-export const Logo = styled.div`
+export const Avatar = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   img {
+    border-radius: 50%;
     width: 20rem;
     height: 20rem;
   }
   @media (max-width: 760px) {
     width: 90%;
+    margin-top: 200px;
+    margin-bottom: 50px;
   }
   @media (max-width: 600px) {
     img {

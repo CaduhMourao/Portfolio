@@ -1,9 +1,22 @@
 import { FaArrowRight, FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
-import { Container, Content, Infos, Profession, About, Icon, LinkProjects, Logo, Img } from '../../styles/indexStyle'
+import { Container, Content, Infos, Profession, About, Icon, LinkProjects, Avatar, Img } from '../../styles/indexStyle'
 import Link from 'next/link'
+import api from '../api'
+import { useEffect, useState } from 'react';
 
 
 export default function Home() {
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    api
+      .get("/users/CaduhMourao")
+      .then((response) => setUser(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, []);
+
   return (
    <Container>
      <Content>
@@ -21,9 +34,9 @@ export default function Home() {
           <LinkProjects>PROJETOS <FaArrowRight /></LinkProjects>
         </Link>
       </Infos>
-      <Logo>
-        <Img src="/images/logo.png" alt="logo" />
-      </Logo>
+      <Avatar>
+        <Img src={user?.avatar_url} />
+      </Avatar>
      </Content>
    </Container>
   )
