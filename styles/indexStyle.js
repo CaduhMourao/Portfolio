@@ -35,11 +35,11 @@ export const Infos = styled.div`
 `;
 
 export const Profession = styled.span`
-  
-`;
+  pointer-events: none;
+`
 
 export const About = styled.span`
-  color: #d4c2fc;
+  color: ##979797;
   margin-bottom: 20px;
   text-align: justify;
 `

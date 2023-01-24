@@ -34,7 +34,7 @@ export default function Projects() {
             <Created_at>Data Criação: { Intl.DateTimeFormat('pt-BR')
               .format(new Date(item.created_at))}
             </Created_at>
-            <Url><a href={item.html_url} target="_blank" rel="noreferrer">Projeto</a></Url>            
+            <Url><a href={item.html_url} target="_blank" rel="noreferrer">Projeto</a></Url>
           </Li>
         ))}
        </Ul>
